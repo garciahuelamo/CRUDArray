@@ -3,9 +3,9 @@
 El programa creado tiene el objetivo de poder añadir – buscar – borrar o actualizar diferentes variables o, salir del programa.
 
 En concreto, vamos a almacenar 3 tipos de datos relacionados entre ellos. Para ello, he utilizado 3 tipos de array, todos con una longitud de 5 ítems.
-  a.	Array tipo String para almacenar los nombres de los videojuegos.
-  b.	Array tipo int para almacenar el código de cada videojuego.
-  c.	Array tipo double para almacenar el precio que cuesta cada videojuego.
+  a. Array tipo String para almacenar los nombres de los videojuegos.
+  b. Array tipo int para almacenar el código de cada videojuego.
+  c. Array tipo double para almacenar el precio que cuesta cada videojuego.
 
 Para el programa se ha creado 3 archivos java: 
   1. Archivo "Utilidades" – donde podemos encontrar los métodos que son funcionales para cualquier programa que podamos hacer en un futuro. 
