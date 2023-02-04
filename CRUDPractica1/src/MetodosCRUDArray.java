@@ -2,6 +2,15 @@ import java.util.Arrays;
 
 public class MetodosCRUDArray {
 
+    /**
+     * Method for adding names of video games.
+     *   Array.toString for all names.
+     * @author Angela_Garcia
+     * @param nombresVideojuegos It is an array that collects the names.
+     * @param longitud It is a variable that collects the length of the array.
+     * @param texto It is a variable for user interaction via console.
+     */
+
     public static void addNombreVideojuegos (String[] nombresVideojuegos, int longitud, String texto){
 
         int contador;
@@ -22,6 +31,15 @@ public class MetodosCRUDArray {
 
         System.out.println("Los videojuegos almacenados son: " + Arrays.toString(nombresVideojuegos));
     }
+
+    /**
+     * Method for adding codes of video games.
+     *   Array.toString for all codes.
+     * @author Angela_Garcia
+     * @param codigosVideojuegos It is an array that collects the codes.
+     * @param longitud It is a variable that collects the length of the array.
+     * @param texto It is a variable for user interaction via console.
+     */
 
     public static void addCodigoVideojuegos (int[] codigosVideojuegos, int longitud, String texto){
 
@@ -44,6 +62,15 @@ public class MetodosCRUDArray {
         System.out.println("Los videojuegos almacenados son: " + Arrays.toString(codigosVideojuegos));
     }
 
+    /**
+     * Method for adding prices of video games.
+     *   Array.toString for all prices.
+     * @author Angela_Garcia
+     * @param preciosVideojuegos It is an array that collects the prices.
+     * @param longitud It is a variable that collects the length of the array.
+     * @param texto It is a variable for user interaction via console.
+     */
+
     public static void addPrecioVideojuegos (double[] preciosVideojuegos, int longitud, String texto){
 
         int contador;
@@ -64,6 +91,14 @@ public class MetodosCRUDArray {
 
         System.out.println("Los videojuegos almacenados son: " + Arrays.toString(preciosVideojuegos));
     }
+
+    /**
+     * Method to search for video game names.
+     * @author Angela_Garcia
+     * @param nombresVideojuegos It is an array that collects the names.
+     * @param texto It is a variable for the user interaction by console.
+     * @return validacion It is a boolean variable that collects if the name is found or not.
+     */
 
     public static boolean searchNombreVideojuegos (String[] nombresVideojuegos, String texto){
 
@@ -93,6 +128,14 @@ public class MetodosCRUDArray {
         return validacion;
     }
 
+    /**
+     * Method to search for video game codes.
+     * @author Angela_Garcia
+     * @param codigosVideojuegos It is an array that collects the codes.
+     * @param texto It is a variable for the user interaction by console.
+     * @return validacion It is a boolean variable that collects if the code is found or not.
+     */
+
     public static boolean searchCodigoVideojuegos (int[] codigosVideojuegos, String texto){
 
         int longitud;
@@ -121,6 +164,14 @@ public class MetodosCRUDArray {
         return validacion;
     }
 
+    /**
+     * Method to search for video game prices.
+     * @author Angela_Garcia
+     * @param preciosVideojuegos It is an array that collects the prices.
+     * @param texto It is a variable for the user interaction by console.
+     * @return validacion It is a boolean variable that collects if the price is found or not.
+     */
+
     public static boolean searchPrecioVideojuegos(double[] preciosVideojuegos, String texto){
 
         int longitud;
@@ -148,6 +199,15 @@ public class MetodosCRUDArray {
 
         return validacion;
     }
+
+    /**
+     * Method to remove video game names.
+     * @author Angela_Garcia
+     * @param nombresVideojuegos It is an array that collects the names.
+     * @param texto It is a variable for the user interaction by console.
+     * @return validacion It is a boolean variable that collects if the name is found or not. If so, the user
+     * will be able to add a new data or not.
+     */
 
     public static boolean deleteNombreVideojuegos(String[] nombresVideojuegos, String texto){
 
@@ -190,6 +250,15 @@ public class MetodosCRUDArray {
         return validacion;
     }
 
+    /**
+     * Method to remove video game codes.
+     * @author Angela_Garcia
+     * @param codigosVideojuegos It is an array that collects the codes.
+     * @param texto It is a variable for the user interaction by console.
+     * @return validacion It is a boolean variable that collects if the code is found or not. If so, the user
+     * will be able to add a new data or not.
+     */
+
     public static boolean deleteCodigoVideojuegos(int[] codigosVideojuegos, String texto){
 
         int longitud;
@@ -231,6 +300,15 @@ public class MetodosCRUDArray {
 
         return validacion;
     }
+
+    /**
+     * Method to remove video game prices.
+     * @author Angela_Garcia
+     * @param preciosVideojuegos It is an array that collects the prices.
+     * @param texto It is a variable for the user interaction by console.
+     * @return validacion It is a boolean variable that collects if the price is found or not. If so, the user
+     * will be able to add a new data or not.
+     */
 
     public static boolean deletePrecioVideojuegos(double[] preciosVideojuegos, String texto){
 
@@ -275,6 +353,15 @@ public class MetodosCRUDArray {
         return validacion;
 
     }
+
+    /**
+     * Method to modify the names of video games.
+     * @author Angela_Garcia
+     * @param nombresVideojuegos It is an array that collects the names.
+     * @param texto It is a variable for the user interaction by console.
+     * @return nombreUsuario Is a variable that returns the new modified name.
+     */
+
     public static String updateNombreVideojuegos(String[] nombresVideojuegos, String texto){
 
         int longitud;
@@ -297,6 +384,14 @@ public class MetodosCRUDArray {
 
         return nombreUsuario;
     }
+
+    /**
+     * Method to modify the codes of video games.
+     * @author Angela_Garcia
+     * @param codigosVideojuegos It is an array that collects the codes.
+     * @param texto It is a variable for the user interaction by console.
+     * @return codigoUsuario Is a variable that returns the new modified code.
+     */
 
     public static boolean updateCodigoVideojuegos(int[] codigosVideojuegos, String texto){
 
@@ -329,6 +424,14 @@ public class MetodosCRUDArray {
 
         return validacion;
     }
+
+    /**
+     * Method to modify the prices of video games.
+     * @author Angela_Garcia
+     * @param preciosVideojuegos It is an array that collects the prices.
+     * @param texto It is a variable for the user interaction by console.
+     * @return precioUsuario Is a variable that returns the new modified price.
+     */
 
     public static boolean updatePrecioVideojuegos(double[] preciosVideojuegos, String texto){
 
